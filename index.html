@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA</title>
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="google-signin-client_id" content="225025604893-oap9ou23kcmvq8jeh1s8qvbrps6f7eir.apps.googleusercontent.com">
+</head>
+<body>
+    <header>
+        <div class="loginbox">
+            <div class="nomelogo">
+                <h1>SPA</h1>
+                <p>Successful Pro Art</p>
+            </div>
+            <div class="loginbtn">
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            </div>
+        </div>
+    </header>
+    <div class="profile" id="profile">
+        <div class="profilein">
+            <div class="img"><img src="" id="imglogo" width="70px" height="70px"></div>
+            <div id="name2" style="color: white; font-size: 25px;"></div>
+            <div class="maisprabaixo">
+                <div class="email">
+                    <h1>GMAIL:</h1>
+                    <h2 id="email"></h2>
+                    <h1>ID:</h1>
+                    <h2 id="id"></h2>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="singout" onclick="signOut();">Sign out</a>
+            </div>
+            <div class="ab" id="closed">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+    </div>
+    <main>
+        <nav class="menu">
+            <div class="logo">SPA</div>
+            <div>
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#galeria">GALERIA</a></li>
+                    <li><a href="https://www.instagram.com/erickgamer56/" target="_blank">INSTAGRAM</a></li>
+                    <div class="menue" id="active">PROFILE</div>
+                </ul>
+            </div>
+        </nav>
+        <div class="infos">
+            <h1 id="name">NAME</h1>
+            <a href="#galeria"><input type="button" value="VER ARTS" id="arts"></a>
+        </div>
+    </main>
+    <section class="infose">
+        <div>
+            <h1>Quem sou eu?</h1>
+            <p id="name3"></p>
+        </div>
+        <div class="img2">
+            <img src="img/241764105_215697770537712_5254549533682174010_n.jpg" id="img2">
+        </div>
+    </section>
+    <h1 style="text-align: center; color: white; margin-top: 50px;">GALERIA</h1>
+    <section class="galeria" id="galeria">
+        <div class="boxs">
+            <div class="boxs1">
+                <div class="box"></div>
+                <div class="box"></div>
+                <div class="box"></div>
+            </div>
+            <div class="boxs2">
+                <div class="box2"></div>
+                <div class="box2"></div>
+                <div class="box2"></div>
+            </div>
+        </div>
+    </section>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://kit.fontawesome.com/b6ad051501.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
